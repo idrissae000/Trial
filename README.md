@@ -79,3 +79,4 @@ This is a static HTML/CSS/JS site, so Vercel serves files directly:
 - Install Command: *(none)*
 
 `vercel.json` is included to keep clean URLs and route `/terms` to `/terms/` correctly.
+
