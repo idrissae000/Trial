@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero fade-in">
+      <h1 class="brand-title">Frequently Asked Questions</h1>
+      <p class="brand-subtitle">Quick answers to common questions.</p>
+      <nav class="tabs" aria-label="Main sections">
+        <a class="tab-button" href="/">Home</a>
+        <a class="tab-button" href="/faq">FAQ</a>
+        <a class="tab-button" href="/terms">Terms</a>
+      </nav>
+    </header>
+
+    <main class="content fade-in faq-wrap" style="--fade-delay: 120ms; display:block; width:min(900px,92vw);">
+      <section class="faq-list" aria-label="Frequently asked questions">
+        <details class="faq-item">
+          <summary>What is your refund policy?</summary>
+          <div class="faq-answer">
+            <p>We only grant refunds if requested before our work has started. Once work has started, we do not offer refunds.</p>
+            <p class="faq-note">If you have questions before we begin, contact us and we’ll help.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How is my campaign fee distributed between Idriss Music Promos and editors?</summary>
+          <div class="faq-answer">
+            <p>35% of the total campaign fee is retained by Idriss Music Promos for management, coordination, and operations. The remaining 65% is distributed to editors as payment for delivering the edits.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How much do editors get paid per edit?</summary>
+          <div class="faq-answer">
+            <p>Editors are paid a flat $10 per edit, plus a performance bonus of $1 for every 1,000 views above 10,000 views. Bonuses are capped so the maximum payout per edit is $20 total.</p>
+            <p class="faq-note">Performance bonuses depend on views.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Where can I become an editor?</summary>
+          <div class="faq-answer">
+            <p>You can start earning and become an editor by joining our Discord here: <a class="inline-link" href="https://discord.gg/qzcKVHPDdD" target="_blank" rel="noopener noreferrer">https://discord.gg/qzcKVHPDdD</a></p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Where can I reach you?</summary>
+          <div class="faq-answer">
+            <p>You can reach me by email at <a class="inline-link" href="mailto:idriss.ae000@gmail.com">idriss.ae000@gmail.com</a> or through my social media links here: <a class="inline-link" href="https://idrissae.carrd.co" target="_blank" rel="noopener noreferrer">https://idrissae.carrd.co</a></p>
+          </div>
+        </details>
+      </section>
+    </main>
+
+    <footer class="fade-in" style="--fade-delay: 200ms;">
+      <small>© <span id="year"></span> Idriss Music Promotions · <a class="inline-link" href="/terms">Terms of Service</a></small>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
